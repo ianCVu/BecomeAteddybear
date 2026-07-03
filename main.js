@@ -76,6 +76,7 @@ function load() { // Keeps rendering so GLTF Loader loads.
 load();
 
 function move() {
+  requestAnimationFrame(move);
   if (keys.w.pressed === true) {
     camera.translateZ(-0.01);
   }
@@ -88,5 +89,6 @@ function move() {
   if (keys.d.pressed === true) {
     camera.rotateY(-0.01);
   }
+  renderer.render(scene, camera);
 }
 move();
