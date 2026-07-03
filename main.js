@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'https://unpkg.com/three@0.154.0/examples/jsm/loaders/GLTFLoader.js';
 const renderer = new THREE.WebGLRenderer(
   {
     "canvas" : document.getElementById('canvas')
