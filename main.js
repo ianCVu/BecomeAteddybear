@@ -13,7 +13,7 @@ scene.add(light);
 const textureLoader = new THREE.TextureLoader();
 
 //Floor
-const floorTexture = textureLoader('https://img.magnific.com/free-vector/wood-planks-texture-background-parquet-flooring_1048-2145.jpg?semt=ais_hybrid&w=740&q=80');
+const floorTexture = textureLoader.load('https://img.magnific.com/free-vector/wood-planks-texture-background-parquet-flooring_1048-2145.jpg?semt=ais_hybrid&w=740&q=80');
 const floor = new THREE.Mesh(
   new THREE.BoxGeometry(5000, 1, 5000),
   new THREE.MeshStandardMaterial({ map : floorTexture })
