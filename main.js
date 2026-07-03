@@ -51,7 +51,7 @@ window.addEventListener("keydown", function(e) {
     keys.d.pressed = true;
   }
 });
-window.addEventListener("keydown", function(e) {
+window.addEventListener("keyup", function(e) {
   if (e.key === "w") {
     keys.w.pressed = false;
   }
